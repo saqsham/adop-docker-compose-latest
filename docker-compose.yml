@@ -9,8 +9,8 @@ proxy:
   #build: ../images/docker-nginx/
   net: ${CUSTOM_NETWORK_NAME}
   ports:
-    - "81:80"
-    - "444:443"
+    - "80:80"
+    - "443:443"
   environment:
     - "constraint:tier==public"
     - "LDAP_SERVER=${LDAP_SERVER}"
